@@ -1,5 +1,14 @@
+/* [ RESTYLE TAG ] */
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
 
-
+body, html {
+	height: 100%;
+	font-family: OpenSans-Regular, sans-serif;
+}
 /* ==========================================================================
    #FONT
    ========================================================================== */
@@ -38,20 +47,6 @@
     width: -moz-calc((100% - 30px) / 2);
     width: calc((100% - 30px) / 2);
   }
-  
-  @media (max-width: 767px) {
-    .col-2 {
-      width: 100%;
-    }
-  }
-  
-  /* ==========================================================================
-     #BOX-SIZING
-     ========================================================================== */
-  /**
-   * More sensible default box-sizing:
-   * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
-   */
   html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -128,7 +123,6 @@
   body {
     font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
     font-weight: 400;
-    font-size: 14px;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -609,12 +603,6 @@
     padding: 57px 65px;
     padding-bottom: 65px;
   }
-  
-  @media (max-width: 767px) {
-    .card-4 .card-body {
-      padding: 50px 40px;
-    }
-  }
-  
+
 
 

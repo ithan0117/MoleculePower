@@ -1,0 +1,42 @@
+doctype html
+html(lang='en')
+    head
+        title 分子動能
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible', content='ie=edge')
+        title Document
+        link(rel='stylesheet', href='css/bootstrap.min.css')
+        link(rel='stylesheet', href='css/style.css')
+        link(rel='stylesheet', href='css/util.css')
+        link(rel='stylesheet', href='css/login.css')
+    body
+        include template/header.pug
+        .limiter
+            .container-login100
+                .wrap-login100.p-l-55.p-r-55.p-t-65.p-b-50
+                    form.login100-form.validate-form
+                        span.login100-form-title.p-b-33
+                            | 會員登入
+                        .wrap-input100.validate-input(data-validate='Valid email is required: ex@abc.xyz')
+                            input.input100(type='text', name='email', placeholder='帳號')
+                            span.focus-input100-1
+                            span.focus-input100-2
+                        .wrap-input100.rs1.validate-input(data-validate='Password is required')
+                            input.input100(type='password', name='pass', placeholder='密碼')
+                            span.focus-input100-1
+                            span.focus-input100-2
+                        .container-login100-form-btn.m-t-20
+                            button.login100-form-btn
+                                | 登入
+                        .text-center.p-t-45.p-b-4
+                            span.txt1
+                                | 忘記
+                            a.txt2.hov1(href='#')
+                                | 帳號 / 密碼?
+                        .text-center
+                            span.txt1
+                                | 還沒有帳號?
+                            a.txt2.hov1(href='#')
+                                | 註冊
+        //- include template/footer.pug

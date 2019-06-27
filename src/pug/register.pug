@@ -1,0 +1,72 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible', content='ie=edge')
+        title Document
+        link(rel='stylesheet', href='css/bootstrap.min.css')
+        link(rel='stylesheet', href='css/register.css')
+        link(rel='stylesheet', href='css/style.css')
+    body
+        include template/header.pug
+        // register form
+        .page-wrapper.bg-gra-02.p-t-130.p-b-100.font-poppins
+            .wrapper.wrapper--w680
+                .card.card-4
+                    .card-body
+                        h2.title 會員註冊
+                        form(method='POST')
+                            .row.row-space
+                                .col-2
+                                    .input-group
+                                        label.label 姓氏
+                                        input.input--style-4(type='text', name='first_name')
+                                .col-2
+                                    .input-group
+                                        label.label 名
+                                        input.input--style-4(type='text', name='last_name')
+                            .row.row-space
+                                .col-2
+                                    .input-group
+                                        label.label 生日
+                                        .input-group-icon
+                                            input.input--style-4.js-datepicker(type='text', name='birthday')
+                                            i.zmdi.zmdi-calendar-note.input-icon.js-btn-calendar
+                                .col-2
+                                    .input-group
+                                        label.label 性別
+                                        .p-t-10
+                                            label.radio-container.m-r-45
+                                                | 男
+                                                input(type='radio', checked='checked', name='gender')
+                                                span.checkmark
+                                            label.radio-container
+                                                | 女
+                                                input(type='radio', name='gender')
+                                                span.checkmark
+                            .row.row-space
+                                .col-2
+                                    .input-group
+                                        label.label Email
+                                        input.input--style-4(type='email', name='email')
+                                .col-2
+                                    .input-group
+                                        label.label 手機
+                                        input.input--style-4(type='text', name='phone')
+                            //
+                                <div class="input-group">
+                                <label class="label">Subject</label>
+                                <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="subject">
+                                <option disabled="disabled" selected="selected">Choose option</option>
+                                <option>Subject 1</option>
+                                <option>Subject 2</option>
+                                <option>Subject 3</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                                </div>
+                                </div>
+                            .p-t-15
+                                button.btn.btn--radius-2.btn--blue(type='submit')
+                                    a(href='index.html', style='color: white') 送出
