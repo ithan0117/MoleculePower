@@ -10,7 +10,7 @@
     "license": "ISC",
     "dependencies": {
         "event-stream": "^4.0.1",
-        "gulp": "^3.9.1",
+        "gulp": "^4.0.2",
         "gulp-pug": "^4.0.1",
         "gulp-rename": "^1.4.0",
         "gulp-watch": "^5.0.1",
